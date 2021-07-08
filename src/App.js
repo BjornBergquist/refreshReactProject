@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <h1>React Tutorial</h1>
-      <MyFirstComponent />
+      <MyFirstComponent name="Björn" age="32"/>
     </div>
   );
 }

@@ -1,10 +1,13 @@
 import React from 'react'
 import "./MyFirstComponent.css";
 
-export const MyFirstComponent = () => {
+export const MyFirstComponent = (props) => {
     return (
         <React.Fragment>
-            <h1 className="mfc__header"> Det här är min första funktionella reactkomponent. </h1>
+            <h1 className="mfc__header"> 
+            {props.name} 
+            {props.age}
+            </h1>
         </React.Fragment>
     )
 }
