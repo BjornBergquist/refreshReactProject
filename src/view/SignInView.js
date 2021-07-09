@@ -3,12 +3,15 @@ import React, {useState} from 'react'
 
 export const SignInView = () => {
 
-    const [loggedInUser, setLoggedInUser] =  useState("Björn")
+    const [loggedInUser, setLoggedInUser] =  useState("")
+    const [password, setPassword] =  useState("")
 
     return(
         <div>
-           <h1>{loggedInUser}</h1>
-           <button onClick = {() => setLoggedInUser("Hulken")}>Update the state value!</button>
+           <span>Username: </span><input onChange = {event => setLoggedInUser(event.target.value)}/> <br />
+           <span>Password: </span><input onChange = {event => setPassword(event.target.value)} type="password"/> <br />
+           <button>Log in</button>
+        
         </div>
     )
 }
