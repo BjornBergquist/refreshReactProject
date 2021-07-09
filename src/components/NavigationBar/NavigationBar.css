@@ -1,0 +1,23 @@
+.navbar__wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: olivedrab;
+}
+
+.logotype {
+  max-width: unset;
+  width: 100px;
+}
+
+.signin {
+  grid-column: -3/-2;
+  align-self: center;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.logotype,
+.signin {
+  cursor: pointer;
+}
