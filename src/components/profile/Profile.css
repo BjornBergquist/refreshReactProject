@@ -1,0 +1,16 @@
+.profile__wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.profile__img {
+  width: 3rem;
+  border-radius: 50%;
+  grid-column: 1/5;
+  justify-self: center;
+}
+
+.profile__username {
+  align-self: center;
+  grid-column: 7/11;
+}
