@@ -8,7 +8,7 @@ export const HomeView = () => {
             alert("Component is being removed.")
         }
     }, [count])
-    return (
+        return (
         <div>
             <h1>This is the HomeView</h1>
             <h2>{count}</h2>
