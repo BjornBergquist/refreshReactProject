@@ -1,8 +1,10 @@
 .navbar__wrapper {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  background-color: olivedrab;
-  color: white;
+  background-color: var(--clr-sec);
+  color: var(--clr-prim);
+  position: relative;
+  padding: 0.5rem;
 
   margin-bottom: 0.5rem;
   box-shadow: 0 -2rem 0.5rem 2rem hsl(0, 0%, 0%, 20%);
@@ -10,7 +12,7 @@
 
 .logotype {
   max-width: unset;
-  width: 100px;
+  height: 3rem;
 }
 
 .profile {

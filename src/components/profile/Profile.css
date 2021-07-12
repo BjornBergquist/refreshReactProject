@@ -1,16 +1,47 @@
 .profile__wrapper {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 200px;
+  justify-content: space-around;
 }
 
 .profile__img {
   width: 3rem;
   border-radius: 50%;
-  grid-column: 1/5;
-  justify-self: center;
+  align-self: center;
 }
 
 .profile__username {
   align-self: center;
-  grid-column: 7/11;
+}
+
+.profile__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: var(--clr-sec);
+  width: 200px;
+  flex-direction: column;
+}
+
+.profile__wrapper:hover .profile__dropdown {
+  display: flex;
+}
+
+.profile__dropdown a {
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.profile__dropdown a:hover {
+  background-color: var(--clr-accent);
+}
+
+.profile__dropdown .break {
+  margin: 0.5em auto;
+  width: 90%;
+  height: 2px;
+  background-color: var(--clr-prim);
 }

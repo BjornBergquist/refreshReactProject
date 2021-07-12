@@ -5,14 +5,12 @@
 }
 
 :root {
-  --clr-logo: #6c63ff;
+  --clr-prim: hsl(0, 0%, 100%);
+  --clr-sec: hsl(80, 60%, 35%);
+  --clr-accent: hsl(270, 100%, 60%);
 }
 
 body {
   margin: 0;
   padding: 0;
-}
-
-.logo--fill {
-  fill: white;
 }
