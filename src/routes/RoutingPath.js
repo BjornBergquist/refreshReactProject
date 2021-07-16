@@ -1,7 +1,7 @@
 const homeView = "/"
 const recipeView = "/recipe"
 const signInView = "/signin"
-const profileView = "profile"
+const profileView = "/profile"
 const settingsView = "/settings"
 //const View = "/"
 
